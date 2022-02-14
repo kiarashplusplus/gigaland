@@ -2,9 +2,7 @@ import React from 'react';
 import { Router, Location, Redirect } from '@reach/router';
 import ScrollToTopBtn from './menu/ScrollToTop';
 import Header from './menu/header';
-import Home from './pages/home';
 import Home1 from './pages/home1';
-import Home2 from './pages/home2';
 import Explore from './pages/explore';
 import Explore2 from './pages/explore2';
 import Helpcenter from './pages/helpcenter';
@@ -64,9 +62,9 @@ const app= () => (
     <Header/>
       <PosedRouter>
       <ScrollTop path="/">
-        <Home exact path="/">
+        <Home1 exact path="/">
           <Redirect to="/home1" />
-        </Home>
+        </Home1>
         <Explore path="/explore" />
         <Explore2 path="/explore2" />
         <Helpcenter path="/helpcenter" />
